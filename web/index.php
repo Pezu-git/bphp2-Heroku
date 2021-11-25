@@ -7,7 +7,7 @@ session_start();
 if (empty($_SESSION['name'])) {
   include("index.html");
 } else {
-  $content = '<a href="http://localhost:8000/exit.php">Вернуться</a>';
+  $content = '<a href="exit.php">Вернуться</a>';
   echo 'Прветствую' . $_SESSION['name'] . '</br>';
   echo $content;
 }
